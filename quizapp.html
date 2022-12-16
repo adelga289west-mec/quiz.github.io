@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        body{
+            background-color: gray;
+        }
+        #container{
+            width: 90vw;
+            height: 85vh;
+            border:5px solid black;
+            background-color: white;
+            margin: auto;
+            margin-top:50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #questionnum{
+            width:80%;
+            height:70px;
+            font-size: 50px;
+        }
+        #question{
+            width:80%;
+            height:70px;
+            border-radius: 25px;
+            border:5px solid black;
+            margin-bottom:50px;
+            font-size: 30px;
+            display: flex;
+            align-items: center; 
+            background-color: lightblue;
+        }
+        .answers{
+            width:80%;
+            height:300px;   
+            
+        }
+        .button{
+            width:100%;
+            height:70px;
+            background-color: gray;
+            margin:auto;
+            border-radius: 25px;
+            margin-bottom:10px;
+            font-size: 20px;
+            color:white;
+        }
+        .button:hover{
+            background-color: rgb(154, 154, 154);
+        }
+        .prevnext{
+            width:80%;
+            height:70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .backnnext{
+            height:30px;
+            width:80px;
+            margin-left: 5px;
+            margin-left: 5px;
+            background-color: lightblue;
+            color:black;
+            border-radius: 25px;
+        }
+        .backnnext:hover{
+            background-color: rgb(198, 230, 241);
+        }   
+     
+    </style>
+</head>
+<body onload = "startquestions()">
+    <div id="container">
+        <div id="questionnum">
+            Score: 
+          
+        </div>
+        <div id="question">
+        </div>
+        <div class="answers">
+            <button class="button" id="button1" onclick="clickbtn1()" ></button>
+            <button class="button" id="button2" onclick="clickbtn2()"></button>
+            <button class="button" id="button3" onclick="clickbtn3()"></button>
+            <button class="button" id="button4" onclick="clickbtn4()"></button>
+        </div>
+        <div class="prevnext">
+            <button class="backnnext" id="back">Previous</button>
+            <button class="backnnext" id="submit">Submit</button>
+            <button class="backnnext" id="next">Next</button>
+            
+
+        </div> 
+    </div>
+    <script src="quizapp.js"></script>
+</body>
+</html>
